@@ -8,7 +8,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
-  <app-root></app-root>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand"> Feeder</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <app-root></app-root>
+
+  </div>
+  <footer class="navbar navbar-inverse navbar-fixed-bottom text-center">
+    <p>&copy; 2018 - Feeder</p>
+  </footer>
 </body>
+
 </html>
