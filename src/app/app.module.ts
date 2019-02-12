@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { SignInComponent } from './login/sign-in/sign-in.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 
@@ -29,6 +30,7 @@ import { SignInComponent } from './login/sign-in/sign-in.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
