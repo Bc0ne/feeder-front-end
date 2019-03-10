@@ -1,17 +1,36 @@
-
-<div class="row">
-    <form novalidate (ngSubmit)="signIn()" [formGroup]="loginForm">
+<form novalidate (ngSubmit)="signIn()" [formGroup]="loginForm">
+    <div class="row">
         <div class="form-group col-md-8 col-md-offset-2">
             <input type="email" class="form-control login" formControlName="email" placeholder="Email">
         </div>
-  
+    </div>
+    <div class="row">
         <div class="form-group col-md-8 col-md-offset-2">
             <input type="password" class="form-control" formControlName="password" placeholder="Password">
-          </div>
-  
+        </div>
+    </div>
+    <div class="row">
         <div class="form-group col-md-8 col-md-offset-2">
             <button type="submit" class="form-control btn btn-blue">Sign In</button>
         </div>
-      </form>
+    </div>
+</form>
+
+<div class="row">
+    <div class="col-md-4 col-md-offset-2">
+        <input type="button" class="btn btn-info" value="Login with facebook">
+    </div>
+    <div class="col-md-4">
+        <input type="button" class="btn btn-danger" value="Login with google+">
+    </div>
 </div>
-  
+<br>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <input type="button" class="btn btn-success" value="Create new account" (click)="createNewAccount()">
+    </div>
+</div>
+<div *ngIf="newAccount">
+    <hr>
+    <app-sign-up></app-sign-up>
+</div>

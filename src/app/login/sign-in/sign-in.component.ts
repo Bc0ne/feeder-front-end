@@ -13,6 +13,7 @@ export class SignInComponent implements OnInit {
 
   loginForm: FormGroup;
   login: LoginInputModel = new LoginInputModel();
+  newAccount: boolean = false;
 
   constructor(private fb: FormBuilder, private router: Router, private auth: IdentityService) { }
 
@@ -41,4 +42,8 @@ export class SignInComponent implements OnInit {
     this.router.navigate(['/welcome']);
   }
 
+
+  createNewAccount() {
+    this.newAccount = true;
+  }
 }
